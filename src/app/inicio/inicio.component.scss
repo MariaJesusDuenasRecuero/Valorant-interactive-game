@@ -1,10 +1,35 @@
+/*PALETA DE COLORES*/
+$primary-color: #FD4556;
+$secondary-color: #BD3944;
+$tertiary-color: #53212B;
+$text-color: #FFFBF5;
+$black-color: #000000;
+$green-color: #0FD2B1;
+
+
 .fondo{
-    background-image: url("../../assets/background.jpg");
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 a, h1{
-    color: white;
+    color: $text-color;
+    font-size: calc(6px + 3vw);
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1{
+    margin-bottom: 100px;
+}
+
+a{
+    font-size: calc(5px + 2vw);
+    margin-top: 2%;
+}
+
+a:hover{
+    color: $green-color;
 }

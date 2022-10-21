@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'adivinaJett',component: AdivinaJettComponent},
   {path: 'adivinaKj',component: AdivinaKjComponent},
   {path: 'quiz',component: QuizComponent},
-
+  { path: '', redirectTo: 'general', pathMatch: 'full' },
 ];
 
 @NgModule({

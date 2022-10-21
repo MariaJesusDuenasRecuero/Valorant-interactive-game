@@ -1,12 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+/*PALETA DE COLORES*/
+$primary-color: #FD4556;
+$secondary-color: #BD3944;
+$tertiary-color: #53212B;
+$text-color: #FFFBF5;
+$black-color: #000000;
+$green-color: #000;
+
+
 
 html,
 body {
   height: 100%;
+  color: $text-color;
 }
 body {
   margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  background-image: url("https://playvalorant.com/assets/images/agents-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Importing Bootstrap SCSS file. */

@@ -1,0 +1,22 @@
+/*PALETA DE COLORES*/
+$primary-color: #FD4556;
+$secondary-color: #BD3944;
+$tertiary-color: #53212B;
+$text-color: #FFFBF5;
+$black-color: #000000;
+$green-color: #000;
+
+h1{
+    color: $text-color;
+    font-size: calc(8px + 4vw);
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.botonPersonaje{
+    color: $black-color;
+    background-color: #53212B;
+    align-items: center;
+    margin-left: 10%;
+}
