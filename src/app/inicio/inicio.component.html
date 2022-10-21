@@ -1,0 +1,19 @@
+<div *ngIf="router.url === '/general'; else elseIfBlock" class="mt-5 d-flex flex-column align-items-center fondo">
+    <div class="justify-content-center">
+      <h1>
+        <strong>BIENVENIDO AL JUEGO DE *NO SE QUE NOMBRE TODAVIA*</strong>
+      </h1>
+      <br>
+      <div class="botones justify-content-center">
+        <a routerLink="/adivinaJugada" class="nav-link" routerLinkActive="active">Adivina la jugada</a>
+        <a routerLink="/quiz" class="nav-link" routerLinkActive="active">Quiz de valorant</a>
+      </div>
+
+      <br>
+      <br>
+
+    </div>
+</div>
+<ng-template #elseIfBlock>
+  <router-outlet></router-outlet>
+</ng-template>

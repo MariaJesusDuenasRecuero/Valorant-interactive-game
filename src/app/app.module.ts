@@ -13,9 +13,14 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { VideoComponent } from './video/video.component';
+import { AdivinaJugadaComponent } from './adivina-jugada/adivina-jugada.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { AdivinaKjComponent } from './adivina-kj/adivina-kj.component';
+import { AdivinaJettComponent } from './adivina-jett/adivina-jett.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
-  declarations: [AppComponent, ToolbarComponent, LoginComponent, VideoComponent],
+  declarations: [AppComponent, ToolbarComponent, LoginComponent, VideoComponent, AdivinaJugadaComponent, InicioComponent, AdivinaKjComponent, AdivinaJettComponent, QuizComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
