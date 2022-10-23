@@ -1,10 +1,11 @@
-/*PALETA DE COLORES*/
+/**********PALETA DE COLORES************/
 $primary-color: #FD4556;
 $secondary-color: #BD3944;
 $tertiary-color: #53212B;
 $text-color: #FFFBF5;
 $black-color: #000000;
-$green-color: #000;
+$green-color: #0FD2B1;
+/**************************************/
 
 h1{
     color: $text-color;
@@ -15,8 +16,15 @@ h1{
 }
 
 .botonPersonaje{
-    color: $black-color;
-    background-color: #53212B;
-    align-items: center;
-    margin-left: 10%;
+    width: 45%;
+    display: block;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+
+#jettkj{
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
