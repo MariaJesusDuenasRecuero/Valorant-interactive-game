@@ -28,3 +28,18 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+
+.botonVolver{
+  position:fixed;
+width:400px;
+height:60px;
+top:40px;
+left:40px;
+  background-color: transparent;
+color:$text-color;
+border-radius:50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: calc(5px + 1.5vw);
+  border-color: transparent;
+text-align:center;
+}

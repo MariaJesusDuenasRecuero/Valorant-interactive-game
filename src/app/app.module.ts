@@ -5,11 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { LoginComponent } from './login/login.component';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { VideoComponent } from './video/video.component';
@@ -19,8 +19,9 @@ import { AdivinaKjComponent } from './adivina-kj/adivina-kj.component';
 import { AdivinaJettComponent } from './adivina-jett/adivina-jett.component';
 import { QuizComponent } from './quiz/quiz.component';
 
+
 @NgModule({
-  declarations: [AppComponent, ToolbarComponent, LoginComponent, VideoComponent, AdivinaJugadaComponent, InicioComponent, AdivinaKjComponent, AdivinaJettComponent, QuizComponent],
+  declarations: [AppComponent, VideoComponent, AdivinaJugadaComponent, InicioComponent, AdivinaKjComponent, AdivinaJettComponent, QuizComponent, ],
   imports: [
     BrowserModule,
     AppRoutingModule,

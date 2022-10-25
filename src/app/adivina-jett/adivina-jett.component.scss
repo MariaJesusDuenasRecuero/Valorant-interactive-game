@@ -1,3 +1,15 @@
+/**********PALETA DE COLORES************/
+$primary-color: #FD4556;
+$secondary-color: #BD3944;
+$tertiary-color: #53212B;
+$text-color: #FFFBF5;
+$black-color: #000000;
+$green-color: #0FD2B1;
+/**************************************/
+
+
+
+
 video{
     width: 100%;
     height: 100%;
@@ -10,4 +22,19 @@ video{
     width:60%;
     padding: 10px;
     padding-top: 4%;
+}
+.botonVolver{
+  position:fixed;
+width:400px;
+height:60px;
+top:40px;
+left:40px;
+  background-color: transparent;
+color:$text-color;
+border-radius:50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: calc(5px + 1.5vw);
+  border-color: transparent;
+text-align:center;
+padding-bottom: 70px;
 }
