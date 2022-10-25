@@ -10,7 +10,6 @@ $green-color: #000;
 
 html,
 body {
-  height: 100%;
   color: $text-color;
 }
 body {
@@ -19,7 +18,7 @@ body {
   background-image: url("https://playvalorant.com/assets/images/agents-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size:auto;
 }
 
 /* Importing Bootstrap SCSS file. */

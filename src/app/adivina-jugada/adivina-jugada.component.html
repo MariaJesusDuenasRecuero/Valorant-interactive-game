@@ -1,39 +1,40 @@
 
 <div class="justify-content-center">
+  <button routerLink="/general" class="nav-link botonVolver" routerLinkActive="active">
+    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 24 24" fill="none" stroke="#FFFBF5" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
+    INICIO
+  </button>
       <h1>
         <strong>ELIGE PERSONAJE</strong>
       </h1>
       <br>
-      <button routerLink="/general" class="nav-link botonVolver" routerLinkActive="active">
-        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 24 24" fill="none" stroke="#FFFBF5" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
-        VOLVER AL INICIO
-      </button>
-        <br>
-        <div class="justify-content-center">
+      <br>
+      <br>
+        <div class="justify-content-center"> 
         </div>
 
         <div class="container align-content-center">
           <div class="row">
             <div class="col">
               <div class="row">
-                <img id="jettkj" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt53405c26141beff8/5f21fda671ec397ef9bf0894/V_AGENTS_587x900_KillJoy_.png">
+                <img id="jett" class="blur-in-expand" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt53405c26141beff8/5f21fda671ec397ef9bf0894/V_AGENTS_587x900_KillJoy_.png">
               </div>
               <div class="row">
-                <button mat-flat-button id="botonPersonaje" routerLink="/adivinaKj" class="nav-link" routerLinkActive="active">KJ</button>
+                <div id="borderButton">
+                  <a mat-flat-button id="botonPersonaje" routerLink="/adivinaKj" class="nav-link " routerLinkActive="active">KILLJOY</a>
+                </div>
               </div>
             </div>
             <div class="col">
               <div class="row">
-                <img id="jettkj" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltceaa6cf20d328bd5/5eb7cdc1b1f2e27c950d2aaa/V_AGENTS_587x900_Jett.png">
+                  <img id="kj" class="blur-in-expand" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltceaa6cf20d328bd5/5eb7cdc1b1f2e27c950d2aaa/V_AGENTS_587x900_Jett.png">
               </div>
               <div class="row">
-                <button mat-flat-button id="botonPersonaje" routerLink="/adivinaJett" class="nav-link" routerLinkActive="active">jett</button>
+                <div id="borderButton">
+                  <a mat-flat-button id="botonPersonaje" routerLink="/adivinaJett" class="nav-link " routerLinkActive="active">JETT</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
 </div>
-
