@@ -4,7 +4,7 @@ $secondary-color: #BD3944;
 $tertiary-color: #53212B;
 $text-color: #FFFBF5;
 $black-color: #000000;
-$green-color: #000;
+$green-color: #0FD2B1;
 
 
 
@@ -19,6 +19,38 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size:auto;
+}
+
+.video-js .vjs-control-bar {
+  background-color: $green-color !important;
+  color: #031b17;
+  border-radius: 0px 0px 20px 20px !important;
+}
+
+.video-js .vjs-play-progress{
+  background-color: #031b17 !important;
+}
+
+.vjs-volume-level{
+  background-color: #031b17 !important;
+}
+
+.vjs-poster{
+  border-radius: 20px;
+  background-size: cover !important;
+}
+
+.vjs-modal-dialog{
+  border-radius: 20px !important;
+}
+
+.vjs-big-play-button{
+  background-color: $green-color !important;
+  border-radius: 10 !important;
+}
+
+.vjs-close-button{
+  color:$green-color !important;
 }
 
 /* Importing Bootstrap SCSS file. */

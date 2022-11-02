@@ -5,6 +5,7 @@ import { VideoComponent } from './video/video.component';
 import { AdivinaJugadaComponent } from './adivina-jugada/adivina-jugada.component';
 import { AdivinaKjComponent } from './adivina-kj/adivina-kj.component';
 import { AdivinaJettComponent } from './adivina-jett/adivina-jett.component';
+import { AdivinaRazeComponent } from './adivina-raze/adivina-raze.component';
 import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'adivinaJugada',component: AdivinaJugadaComponent},
   {path: 'adivinaJett',component: AdivinaJettComponent},
   {path: 'adivinaKj',component: AdivinaKjComponent},
+  {path: 'adivinaRaze',component: AdivinaRazeComponent},
   {path: 'quiz',component: QuizComponent},
   { path: '', redirectTo: 'general', pathMatch: 'full' },
 ];

@@ -8,11 +8,28 @@ $green-color: #0FD2B1;
 /**************************************/
 
 video{
-    width: 100%;
-    height: 100%;
     border-radius: 20px;
-
 }
+
+.video-js{
+    width: 900px !important;
+    height: 500px !important;
+    border-radius: 20px !important;
+}
+
+.vjs-poster{
+    border-radius: 20px !important;
+    background-color: transparent !important;
+}
+
+#videojs_html5_api{
+    border-radius: 20px !important;
+}
+
+.video-js .vjs-control-bar {
+    background-color: #0FD2B1 !important;
+}
+
 
 .contenedorVideo{
     margin: auto;
@@ -20,6 +37,7 @@ video{
     padding: 10px;
     padding-top: 4%;
     margin-top: 4%;
+    border-radius: 50px;
 }
 
 .botonVolver{

@@ -18,10 +18,11 @@ import { InicioComponent } from './inicio/inicio.component';
 import { AdivinaKjComponent } from './adivina-kj/adivina-kj.component';
 import { AdivinaJettComponent } from './adivina-jett/adivina-jett.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { AdivinaRazeComponent } from './adivina-raze/adivina-raze.component';
 
 
 @NgModule({
-  declarations: [AppComponent, VideoComponent, AdivinaJugadaComponent, InicioComponent, AdivinaKjComponent, AdivinaJettComponent, QuizComponent, ],
+  declarations: [AppComponent, VideoComponent, AdivinaJugadaComponent, InicioComponent, AdivinaKjComponent, AdivinaJettComponent, QuizComponent, AdivinaRazeComponent, ],
   imports: [
     BrowserModule,
     AppRoutingModule,
