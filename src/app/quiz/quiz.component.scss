@@ -6,20 +6,22 @@ $text-color: #FFFBF5;
 $black-color: #000000;
 $green-color: #0FD2B1;
 /**************************************/
+.background{
 
+}
 
 
 .botonVolver{
   position:fixed;
-width:400px;
-height:60px;
-top:40px;
-left:40px;
+  width:400px;
+  height:60px;
+  top:40px;
+  left:40px;
   background-color: transparent;
-color:$text-color;
-border-radius:50px;
+  color:$text-color;
+  border-radius:50px;
   font-family: 'Oswald', sans-serif;
   font-size: calc(5px + 1.5vw);
   border-color: transparent;
-text-align:center;
+  text-align:center;
 }
