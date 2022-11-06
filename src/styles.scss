@@ -14,10 +14,11 @@ body {
 }
 body {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
-  background-image: url("https://playvalorant.com/assets/images/agents-background.jpg");
+  font-family: 'Oswald', sans-serif !important;
+  background-image: url("/assets/1203280.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-position-y: center;
   background-size:auto;
 }
 

@@ -12,8 +12,8 @@ video{
 }
 
 .video-js{
-    width: 900px !important;
-    height: 500px !important;
+    width: 100% !important;
+    height: 34rem !important;
     border-radius: 20px !important;
 }
 
@@ -44,8 +44,8 @@ video{
     position:fixed;
 	width:400px;
 	height:60px;
-	top:40px;
-	left:40px;
+	top:30px;
+	left:30px;
     background-color: transparent;
 	color:$text-color;
 	border-radius:50px;

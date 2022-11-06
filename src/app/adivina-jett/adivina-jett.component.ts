@@ -42,6 +42,7 @@ export class AdivinaJettComponent implements OnInit {
               height: auto;
               margin:auto;
               display:block;
+              border-radius:15px;
             }
             a{
               text-decoration:none;
@@ -57,6 +58,8 @@ export class AdivinaJettComponent implements OnInit {
             </h1>
             <br/>
             <h3>Una línea de voz no utilizada dentro de los archivos del juego de Raze la tiene llamando a Jett "Joon-Hee". Al principio se pensó que este era su nombre. Finalmente se reveló que el verdadero nombre de Jett era <span style="color: #0FD2B1; font-family: 'Oswald', sans-serif; font-size:20px;" >Sunwoo Han</span>.</h3>
+            <img  height=200px src="../../assets/images/jett.jpg"> 
+
             </div>
 
 
@@ -80,6 +83,12 @@ export class AdivinaJettComponent implements OnInit {
         const contentEl = document.createElement('div');
         contentEl.innerHTML = `
         <style>
+          img{
+            width: 150px;
+            margin:auto;
+            display:block;
+            border-radius:15px;
+          }
 
           .btn-primary{
             font-size: 17px !important;
@@ -89,15 +98,37 @@ export class AdivinaJettComponent implements OnInit {
             background-color: #FD4556;
           }
 
+          .btn-primary:disabled{
+            background-color: transparent !important;
+          }
+
+          #boton1Correcta:disabled{
+            opacity:1 !important;
+            background-color: #0FD2B1 !important;
+          }
+
           .btn-primary:active{
             background-color: #BD3944 !important;
           }
 
           #ganar{
             display:none;
+            color: #0FD2B1;
+            font-family: 'Oswald', sans-serif;
+            font-size: 25px;
+            text-align: center;
+            padding-top:8%;
           }
 
           #perder{
+            display:none;
+            color: #FD4556;
+            font-family: 'Oswald', sans-serif;
+            font-size: 25px;
+            text-align: center;
+          }
+
+          #imgperder{
             display:none;
           }
           
@@ -108,27 +139,44 @@ export class AdivinaJettComponent implements OnInit {
           <h1>
             <strong style="font-family: 'Oswald', sans-serif">¿Qué ocurre a continuación?</strong>          
           </h1>
-          <br/>
-          <button type="button" class="btn btn-primary" onClick="botonPerder()">1. Raze no aparece y Jett gana la ronda defusando la spike a tiempo.</button>
-          <br/><br/>
-          <button type="button" class="btn btn-primary"  onClick="botonGanar()">2. Raze aparece y mata a Jett</button>
-          <br/><br/>
-          <button type="button" class="btn btn-primary" onClick="botonPerder()">3. Raze no aparece pero Jett no tiene suficiente tiempo para defusar la ronda y pierden.</button>
-          <br/><br/>
-          <button type="button" class="btn btn-primary"  onClick="botonGanar()">4. Raze aparece, Jett mata a Raze pero no tiene suficiente tiempo para defusar y pierden la ronda.</button>
-          <p id="ganar">SI, ES CORRECTO</p>
-          <p id="perder">NO, MAS SUERTE LA PROXIMA VEZ</p>
-        </div>
-
-        <script>
-        function botonGanar(){
+          <button type="button" id='boton1Correcta' class="btn btn-primary" onClick="
           document.getElementById('ganar').style.display='block';
-        }
-
-        function botonPerder(){
+          document.getElementById('boton1Correcta').disabled=true;
+          document.getElementById('boton2').disabled=true;
+          document.getElementById('boton3').disabled=true;
+          document.getElementById('boton4').disabled=true;
+          ">1. Raze no aparece y Jett gana la ronda defusando la spike a tiempo.</button>
+          <br/><br/>
+          <button type="button" id='boton2' class="btn btn-primary"  onClick="
           document.getElementById('perder').style.display='block';
-        }
-      </script>
+          document.getElementById('imgperder').style.display='block';
+          document.getElementById('boton1Correcta').disabled=true;
+          document.getElementById('boton2').disabled=true;
+          document.getElementById('boton3').disabled=true;
+          document.getElementById('boton4').disabled=true;
+          ">2. Raze aparece y mata a Jett</button>
+          <br/><br/>
+          <button type="button" id='boton3' class="btn btn-primary" onClick="
+          document.getElementById('perder').style.display='block';
+          document.getElementById('imgperder').style.display='block';
+          document.getElementById('boton1Correcta').disabled=true;
+          document.getElementById('boton2').disabled=true;
+          document.getElementById('boton3').disabled=true;          
+          document.getElementById('boton4').disabled=true;
+          ">3. Raze no aparece pero Jett no tiene suficiente tiempo para defusar la ronda y pierden.</button>
+          <br/><br/>
+          <button type="button" id='boton4' class="btn btn-primary"  onClick="
+          document.getElementById('perder').style.display='block'
+          document.getElementById('imgperder').style.display='block';
+          document.getElementById('boton1Correcta').disabled=true;
+          document.getElementById('boton2').disabled=true;
+          document.getElementById('boton3').disabled=true;
+          document.getElementById('boton4').disabled=true;
+          ">4. Raze aparece, Jett mata a Raze pero no tiene suficiente tiempo para defusar y pierden la ronda.</button>
+            <p id="ganar">SI, ES CORRECTO! :D</p>
+            <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
+            <img id='imgperder' height=150px src="../../assets/grafitis/grafiti10.jpg"> 
+          </div>
         `;
 
         const modal = myPlayer.createModal(contentEl, {});
@@ -148,6 +196,16 @@ export class AdivinaJettComponent implements OnInit {
         const contentEl = document.createElement('div');
         contentEl.innerHTML = `
         <style>
+          img{
+            width: 150px;
+            margin:auto;
+            display:block;
+            border-radius:15px;
+          }
+
+          #imgperder{
+            display:none;
+          }
 
           .btn-primary{
             font-size: 17px !important;
@@ -161,23 +219,77 @@ export class AdivinaJettComponent implements OnInit {
             background-color: #BD3944 !important;
           }
           
+          .btn-primary:disabled{
+            background-color: transparent !important;
+          }
+
+          #boton2Correcta:disabled{
+            opacity:1 !important;
+            background-color: #0FD2B1 !important;
+          }
+
+          #ganar{
+            display:none;
+            color: #0FD2B1;
+            font-family: 'Oswald', sans-serif;
+            font-size: 25px;
+            text-align: center;
+            padding-top:8%;
+          }
+    
+          #perder{
+            display:none;
+            color: #FD4556;
+            font-family: 'Oswald', sans-serif;
+            font-size: 25px;
+            text-align: center;
+          }
+          
         </style>
         <div>
           <br>
           <br>
           <h1>
-            <strong style="font-family: 'Oswald', sans-serif">¿Qué ELO tenía nuestra Jett?</strong>          
-          </h1>
-          <br/>
-          <button type="button" class="btn btn-primary">1. Plata 1</button>
-          <br/><br/>
-          <button type="button" class="btn btn-primary">2. Bronce 3</button> 
-          <br/><br/>
-          <button type="button" class="btn btn-primary">3. Plata 3</button>
-          <br/><br/>
-          <button type="button" class="btn btn-primary">4. Bronce 2</button>
-
-        </div>
+            <strong style="font-family: 'Oswald', sans-serif">¿Qué rango tenía nuestra Jett?</strong>          
+            </h1>
+            <button type="button" id='boton1' class="btn btn-primary" onClick="
+              document.getElementById('perder').style.display='block';
+              document.getElementById('imgperder').style.display='block';
+              document.getElementById('boton1').disabled=true;
+              document.getElementById('boton2Correcta').disabled=true;
+              document.getElementById('boton3').disabled=true;
+              document.getElementById('boton4').disabled=true;
+            ">1. Plata 1</button>
+            <br><br>
+            <button type="button" id='boton2Correcta' class="btn btn-primary" onClick="
+              document.getElementById('ganar').style.display='block';
+              document.getElementById('boton1').disabled=true;
+              document.getElementById('boton2Correcta').disabled=true;
+              document.getElementById('boton3').disabled=true;
+              document.getElementById('boton4').disabled=true;
+            ">2. Bronce 3 </button>
+            <br/><br/>
+            <button type="button" id='boton3' class="btn btn-primary"  onClick="
+              document.getElementById('perder').style.display='block';
+              document.getElementById('imgperder').style.display='block';
+              document.getElementById('boton1').disabled=true;
+              document.getElementById('boton2Correcta').disabled=true;
+              document.getElementById('boton3').disabled=true;
+              document.getElementById('boton4').disabled=true;
+            ">3. Plata 2</button>
+            <br/><br/>
+            <button type="button" id='boton4' class="btn btn-primary"  onClick="
+              document.getElementById('perder').style.display='block';
+              document.getElementById('imgperder').style.display='block';
+              document.getElementById('boton1').disabled=true;
+              document.getElementById('boton2Correcta').disabled=true;
+              document.getElementById('boton3').disabled=true;
+              document.getElementById('boton4').disabled=true;
+            ">4. Bronce 2</button>
+            <p id="ganar">SI, ES CORRECTO! :D</p>
+            <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
+            <img id='imgperder' height=150px src="../../assets/grafitis/grafiti6.jpg"> 
+          </div>
         `;
 
         const modal = myPlayer.createModal(contentEl, {});
