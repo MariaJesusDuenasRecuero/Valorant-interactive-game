@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import videojs from 'video.js';
 
 @Component({
@@ -9,7 +9,7 @@ import videojs from 'video.js';
 export class QuizComponent implements OnInit {
   player?: videojs.Player;
 
-  constructor() {}
+  constructor() { }
 
   // Instantiate a Video.js player OnInit
   ngOnInit(): void {
@@ -29,78 +29,26 @@ export class QuizComponent implements OnInit {
     let firstTime = true;
     let secondTime = true;
     let thirdTime = true;
-    let fourthTime=true;
-    let fifthTime=true;
-    let sixthTime=true;
-    let seventhTime=true;
-    let eightTime=true;
-    let ninethTime=true;
-    let tenthTime=true;
+    let fourthTime = true;
+    let fifthTime = true;
+    let sixthTime = true;
+    let seventhTime = true;
+    let eightTime = true;
+    let ninethTime = true;
+    let tenthTime = true;
 
 
-    this.player.on('timeupdate', function(e) {
+    this.player.on('timeupdate', function (e) {
       if (myPlayer.currentTime() >= 7 && firstTime == true) {
-          firstTime = false;
-          const contentEl = document.createElement('div');
-          contentEl.innerHTML = `
+        firstTime = false;
+        const contentEl = document.createElement('div');
+        contentEl.innerHTML = `
           <style>
           img{
-            width: 150px;
-            margin:auto;
-            display:block;
-            border-radius:15px;
+            width: 150px !important;
           }
-          #img-info{
-            width: 150px;
-            margin:auto;
-            display:block;
-            border-radius:15px;
-          }
-
-          #imgperder{
-            display:none;
-          }
-
-          .btn-primary{
-            font-size: 17px !important;
-          }
-
-          .btn-primary:disabled{
-            background-color: transparent !important;
-          }
-
-          #boton3Correcta:disabled{
-            opacity:1 !important;
-            background-color: #0FD2B1 !important;
-          }
-
-          .btn-primary:hover{
-            background-color: #FD4556;
-          }
-
-          .btn-primary:active{
-            background-color: #BD3944 !important;
-          }
-
-          #ganar{
-            display:none;
-            color: #0FD2B1;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:3%;
-          }
-
-          #perder{
-            display:none;
-            color: #FD4556;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:3%;
-          }
-
         </style>
+
         <div>
           <br>
           <br>
@@ -143,17 +91,17 @@ export class QuizComponent implements OnInit {
           <img id='imgperder' height=250px src="../../assets/grafitis/grafiti1.jpg">
         </div>
         `;
-          myPlayer.play();
-
-      const modal = myPlayer.createModal(contentEl, {});
-
-      if (myPlayer.currentTime() >= 10){
-        modal?.close();
-      }
-
-      modal?.on('modalclose', () => {
         myPlayer.play();
-      });
+
+        const modal = myPlayer.createModal(contentEl, {});
+
+        if (myPlayer.currentTime() >= 10) {
+          modal?.close();
+        }
+
+        modal?.on('modalclose', () => {
+          myPlayer.play();
+        });
       }
 
       if (myPlayer.currentTime() >= 42 && secondTime == true) {
@@ -163,55 +111,8 @@ export class QuizComponent implements OnInit {
         contentEl.innerHTML = `
         <style>
           img{
-            width: 150px;
-            margin:auto;
-            display:block;
-            border-radius:15px;
+            width: 150px !important;
           }
-
-          #imgperder{
-            display:none;
-          }
-
-          .btn-primary{
-            font-size: 17px !important;
-          }
-
-          .btn-primary:disabled{
-            background-color: transparent !important;
-          }
-
-          #boton3Correcta:disabled{
-            opacity:1 !important;
-            background-color: #0FD2B1 !important;
-          }
-
-          .btn-primary:hover{
-            background-color: #FD4556;
-          }
-
-          .btn-primary:active{
-            background-color: #BD3944 !important;
-          }
-
-          #ganar{
-            display:none;
-            color: #0FD2B1;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:3%;
-          }
-
-          #perder{
-            display:none;
-            color: #FD4556;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:3%;
-          }
-
         </style>
         <div>
           <br>
@@ -249,7 +150,7 @@ export class QuizComponent implements OnInit {
 
         const modal = myPlayer.createModal(contentEl, {});
 
-        if (myPlayer.currentTime() >= 43){
+        if (myPlayer.currentTime() >= 43) {
           modal?.close();
         }
 
@@ -258,13 +159,6 @@ export class QuizComponent implements OnInit {
         });
       }
 
-
-
-
-
-
-
-
       if (myPlayer.currentTime() >= 55 && thirdTime == true) {
         myPlayer.pause();
         thirdTime = false;
@@ -272,17 +166,8 @@ export class QuizComponent implements OnInit {
         contentEl.innerHTML = `
           <style>
             img{
-              width: 500px;
-              height: auto;
-              margin:auto;
-              display:block;
-              border-radius:15px;
-
+              width: 500px !important;
             }
-            a{
-              text-decoration:none;
-            }
-
           </style>
 
           <div>
@@ -298,70 +183,23 @@ export class QuizComponent implements OnInit {
 
 
           `;
-          const modal = myPlayer.createModal(contentEl, {});
-          if (myPlayer.currentTime() >= 63){
-            modal?.close();
-          }
-          modal?.on('modalclose', () => {
-            myPlayer.play();
-          });
+        const modal = myPlayer.createModal(contentEl, {});
+        if (myPlayer.currentTime() >= 63) {
+          modal?.close();
         }
-        if (myPlayer.currentTime() >= 80 && fourthTime == true) {
-          myPlayer.pause();
-          fourthTime = false;
-          const contentEl = document.createElement('div');
-          contentEl.innerHTML = `
+        modal?.on('modalclose', () => {
+          myPlayer.play();
+        });
+      }
+      if (myPlayer.currentTime() >= 80 && fourthTime == true) {
+        myPlayer.pause();
+        fourthTime = false;
+        const contentEl = document.createElement('div');
+        contentEl.innerHTML = `
           <style>
           img{
             width: 150px;
-            margin:auto;
-            display:block;
-            border-radius:15px;
           }
-
-          #imgperder{
-            display:none;
-          }
-
-          .btn-primary{
-            font-size: 17px !important;
-          }
-
-          .btn-primary:disabled{
-            background-color: transparent !important;
-          }
-
-          #boton3Correcta:disabled{
-            opacity:1 !important;
-            background-color: #0FD2B1 !important;
-          }
-
-          .btn-primary:hover{
-            background-color: #FD4556;
-          }
-
-          .btn-primary:active{
-            background-color: #BD3944 !important;
-          }
-
-          #ganar{
-            display:none;
-            color: #0FD2B1;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:3%;
-          }
-
-          #perder{
-            display:none;
-            color: #FD4556;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:3%;
-          }
-
         </style>
         <div>
           <br>
@@ -408,75 +246,28 @@ export class QuizComponent implements OnInit {
           <img id='imgperder' height=250px src="../../assets/grafitis/grafiti5.jpg">
         </div>
         `;
-            myPlayer.play();
+        myPlayer.play();
 
-            const modal = myPlayer.createModal(contentEl, {});
+        const modal = myPlayer.createModal(contentEl, {});
 
-            if (myPlayer.currentTime() >= 84){
-              modal?.close();
-            }
+        if (myPlayer.currentTime() >= 84) {
+          modal?.close();
+        }
 
-            modal?.on('modalclose', () => {
-              myPlayer.play();
-            });
-            }
+        modal?.on('modalclose', () => {
+          myPlayer.play();
+        });
+      }
 
-          if (myPlayer.currentTime() >= 85 && fifthTime == true) {
-            myPlayer.pause();
-            fifthTime = false;
-            const contentEl = document.createElement('div');
-            contentEl.innerHTML = `
+      if (myPlayer.currentTime() >= 85 && fifthTime == true) {
+        myPlayer.pause();
+        fifthTime = false;
+        const contentEl = document.createElement('div');
+        contentEl.innerHTML = `
             <style>
             img{
-              width: 150px;
-              margin:auto;
-              display:block;
-              border-radius:15px;
+              width: 150px !important;
             }
-
-            #imgperder{
-              display:none;
-            }
-
-            .btn-primary{
-              font-size: 17px !important;
-            }
-
-            .btn-primary:disabled{
-              background-color: transparent !important;
-            }
-
-            #boton3Correcta:disabled{
-              opacity:1 !important;
-              background-color: #0FD2B1 !important;
-            }
-
-            .btn-primary:hover{
-              background-color: #FD4556;
-            }
-
-            .btn-primary:active{
-              background-color: #BD3944 !important;
-            }
-
-            #ganar{
-              display:none;
-              color: #0FD2B1;
-              font-family: 'Oswald', sans-serif;
-              font-size: 25px;
-              text-align: center;
-              padding-top:3%;
-            }
-
-            #perder{
-              display:none;
-              color: #FD4556;
-              font-family: 'Oswald', sans-serif;
-              font-size: 25px;
-              text-align: center;
-              padding-top:3%;
-            }
-
           </style>
           <div>
             <br>
@@ -523,70 +314,23 @@ export class QuizComponent implements OnInit {
             <img id='imgperder' height=250px src="../../assets/grafitis/grafiti5.jpg">
           </div>
           `;
-          const modal = myPlayer.createModal(contentEl, {});
-          if (myPlayer.currentTime() >= 89){
-            modal?.close();
-          }
-          modal?.on('modalclose', () => {
-            myPlayer.play();
-          });
+        const modal = myPlayer.createModal(contentEl, {});
+        if (myPlayer.currentTime() >= 89) {
+          modal?.close();
         }
-        if (myPlayer.currentTime() >= 100 && sixthTime == true) {
-          myPlayer.pause();
-          sixthTime = false;
-          const contentEl = document.createElement('div');
-          contentEl.innerHTML = `
+        modal?.on('modalclose', () => {
+          myPlayer.play();
+        });
+      }
+      if (myPlayer.currentTime() >= 100 && sixthTime == true) {
+        myPlayer.pause();
+        sixthTime = false;
+        const contentEl = document.createElement('div');
+        contentEl.innerHTML = `
           <style>
           img{
-            width: 150px;
-            margin:auto;
-            display:block;
-            border-radius:15px;
+            width: 150px !important;
           }
-
-          #imgperder{
-            display:none;
-          }
-
-          .btn-primary{
-            font-size: 17px !important;
-          }
-
-          .btn-primary:disabled{
-            background-color: transparent !important;
-          }
-
-          #boton3Correcta:disabled{
-            opacity:1 !important;
-            background-color: #0FD2B1 !important;
-          }
-
-          .btn-primary:hover{
-            background-color: #FD4556;
-          }
-
-          .btn-primary:active{
-            background-color: #BD3944 !important;
-          }
-
-          #ganar{
-            display:none;
-            color: #0FD2B1;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:3%;
-          }
-
-          #perder{
-            display:none;
-            color: #FD4556;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:3%;
-          }
-
         </style>
         <div>
           <br>
@@ -627,17 +371,17 @@ export class QuizComponent implements OnInit {
           <img id='imgperder' height=250px src="../../assets/grafitis/grafiti5.jpg">
         </div>
         `;
-              myPlayer.play();
-
-      const modal = myPlayer.createModal(contentEl, {});
-
-      if (myPlayer.currentTime() >= 106){
-        modal?.close();
-      }
-
-      modal?.on('modalclose', () => {
         myPlayer.play();
-      });
+
+        const modal = myPlayer.createModal(contentEl, {});
+
+        if (myPlayer.currentTime() >= 106) {
+          modal?.close();
+        }
+
+        modal?.on('modalclose', () => {
+          myPlayer.play();
+        });
       }
       if (myPlayer.currentTime() >= 119 && seventhTime == true) {
         myPlayer.pause();
@@ -646,55 +390,8 @@ export class QuizComponent implements OnInit {
         contentEl.innerHTML = `
         <style>
         img{
-          width: 150px;
-          margin:auto;
-          display:block;
-          border-radius:15px;
+          width: 150px !important;
         }
-
-        #imgperder{
-          display:none;
-        }
-
-        .btn-primary{
-          font-size: 17px !important;
-        }
-
-        .btn-primary:disabled{
-          background-color: transparent !important;
-        }
-
-        #boton3Correcta:disabled{
-          opacity:1 !important;
-          background-color: #0FD2B1 !important;
-        }
-
-        .btn-primary:hover{
-          background-color: #FD4556;
-        }
-
-        .btn-primary:active{
-          background-color: #BD3944 !important;
-        }
-
-        #ganar{
-          display:none;
-          color: #0FD2B1;
-          font-family: 'Oswald', sans-serif;
-          font-size: 25px;
-          text-align: center;
-          padding-top:3%;
-        }
-
-        #perder{
-          display:none;
-          color: #FD4556;
-          font-family: 'Oswald', sans-serif;
-          font-size: 25px;
-          text-align: center;
-          padding-top:3%;
-        }
-
       </style>
       <div>
         <br>
@@ -746,75 +443,28 @@ export class QuizComponent implements OnInit {
         <img id='imgperder' height=250px src="../../assets/grafitis/grafiti5.jpg">
       </div>
       `;
-            myPlayer.play();
+        myPlayer.play();
 
-    const modal = myPlayer.createModal(contentEl, {});
+        const modal = myPlayer.createModal(contentEl, {});
 
-    if (myPlayer.currentTime() >= 121){
-      modal?.close();
-    }
+        if (myPlayer.currentTime() >= 121) {
+          modal?.close();
+        }
 
-    modal?.on('modalclose', () => {
-      myPlayer.play();
-    });
-    }
+        modal?.on('modalclose', () => {
+          myPlayer.play();
+        });
+      }
 
-    if (myPlayer.currentTime() >= 155 && eightTime == true) {
-      myPlayer.pause();
-      eightTime = false;
-      const contentEl = document.createElement('div');
-      contentEl.innerHTML = `
+      if (myPlayer.currentTime() >= 155 && eightTime == true) {
+        myPlayer.pause();
+        eightTime = false;
+        const contentEl = document.createElement('div');
+        contentEl.innerHTML = `
       <style>
       img{
-        width: 150px;
-        margin:auto;
-        display:block;
-        border-radius:15px;
+        width: 150px !important;
       }
-
-      #imgperder{
-        display:none;
-      }
-
-      .btn-primary{
-        font-size: 17px !important;
-      }
-
-      .btn-primary:disabled{
-        background-color: transparent !important;
-      }
-
-      #boton3Correcta:disabled{
-        opacity:1 !important;
-        background-color: #0FD2B1 !important;
-      }
-
-      .btn-primary:hover{
-        background-color: #FD4556;
-      }
-
-      .btn-primary:active{
-        background-color: #BD3944 !important;
-      }
-
-      #ganar{
-        display:none;
-        color: #0FD2B1;
-        font-family: 'Oswald', sans-serif;
-        font-size: 25px;
-        text-align: center;
-        padding-top:3%;
-      }
-
-      #perder{
-        display:none;
-        color: #FD4556;
-        font-family: 'Oswald', sans-serif;
-        font-size: 25px;
-        text-align: center;
-        padding-top:3%;
-      }
-
     </style>
     <div>
       <br>
@@ -856,74 +506,27 @@ export class QuizComponent implements OnInit {
       <img id='imgperder' height=250px src="../../assets/grafitis/grafiti3.jpg">
     </div>
     `;
+        myPlayer.play();
+
+        const modal = myPlayer.createModal(contentEl, {});
+
+        if (myPlayer.currentTime() >= 160) {
+          modal?.close();
+        }
+
+        modal?.on('modalclose', () => {
           myPlayer.play();
-
-  const modal = myPlayer.createModal(contentEl, {});
-
-  if (myPlayer.currentTime() >= 160){
-    modal?.close();
-  }
-
-  modal?.on('modalclose', () => {
-    myPlayer.play();
-  });
-  }
-  if (myPlayer.currentTime() >= 174 && ninethTime == true) {
-    myPlayer.pause();
-    ninethTime = false;
-    const contentEl = document.createElement('div');
-    contentEl.innerHTML = `
+        });
+      }
+      if (myPlayer.currentTime() >= 174 && ninethTime == true) {
+        myPlayer.pause();
+        ninethTime = false;
+        const contentEl = document.createElement('div');
+        contentEl.innerHTML = `
     <style>
     img{
-      width: 150px;
-      margin:auto;
-      display:block;
-      border-radius:15px;
+      width: 150px !important;
     }
-
-    #imgperder{
-      display:none;
-    }
-
-    .btn-primary{
-      font-size: 17px !important;
-    }
-
-    .btn-primary:disabled{
-      background-color: transparent !important;
-    }
-
-    #boton3Correcta:disabled{
-      opacity:1 !important;
-      background-color: #0FD2B1 !important;
-    }
-
-    .btn-primary:hover{
-      background-color: #FD4556;
-    }
-
-    .btn-primary:active{
-      background-color: #BD3944 !important;
-    }
-
-    #ganar{
-      display:none;
-      color: #0FD2B1;
-      font-family: 'Oswald', sans-serif;
-      font-size: 25px;
-      text-align: center;
-      padding-top:3%;
-    }
-
-    #perder{
-      display:none;
-      color: #FD4556;
-      font-family: 'Oswald', sans-serif;
-      font-size: 25px;
-      text-align: center;
-      padding-top:3%;
-    }
-
   </style>
   <div>
     <br>
@@ -967,72 +570,25 @@ export class QuizComponent implements OnInit {
   `;
         myPlayer.play();
 
-const modal = myPlayer.createModal(contentEl, {});
+        const modal = myPlayer.createModal(contentEl, {});
 
-if (myPlayer.currentTime() >= 180){
-  modal?.close();
-}
+        if (myPlayer.currentTime() >= 180) {
+          modal?.close();
+        }
 
-modal?.on('modalclose', () => {
-  myPlayer.play();
-});
-}
-if (myPlayer.currentTime() >= 227 && tenthTime == true) {
-  myPlayer.pause();
-  tenthTime = false;
-  const contentEl = document.createElement('div');
-  contentEl.innerHTML = `
+        modal?.on('modalclose', () => {
+          myPlayer.play();
+        });
+      }
+      if (myPlayer.currentTime() >= 227 && tenthTime == true) {
+        myPlayer.pause();
+        tenthTime = false;
+        const contentEl = document.createElement('div');
+        contentEl.innerHTML = `
   <style>
   img{
-    width: 150px;
-    margin:auto;
-    display:block;
-    border-radius:15px;
+    width: 150px !important;
   }
-
-  #imgperder{
-    display:none;
-  }
-
-  .btn-primary{
-    font-size: 17px !important;
-  }
-
-  .btn-primary:disabled{
-    background-color: transparent !important;
-  }
-
-  #boton3Correcta:disabled{
-    opacity:1 !important;
-    background-color: #0FD2B1 !important;
-  }
-
-  .btn-primary:hover{
-    background-color: #FD4556;
-  }
-
-  .btn-primary:active{
-    background-color: #BD3944 !important;
-  }
-
-  #ganar{
-    display:none;
-    color: #0FD2B1;
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    padding-top:3%;
-  }
-
-  #perder{
-    display:none;
-    color: #FD4556;
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    padding-top:3%;
-  }
-
 </style>
 <div>
   <br>
@@ -1065,58 +621,27 @@ if (myPlayer.currentTime() >= 227 && tenthTime == true) {
   <img id='imgperder' height=250px src="../../assets/grafitis/grafiti11.jpg">
 </div>
 `;
-      myPlayer.play();
+        myPlayer.play();
 
-const modal = myPlayer.createModal(contentEl, {});
+        const modal = myPlayer.createModal(contentEl, {});
 
-if (myPlayer.currentTime() >= 230){
-modal?.close();
-}
+        if (myPlayer.currentTime() >= 230) {
+          modal?.close();
+        }
 
-modal?.on('modalclose', () => {
-myPlayer.play();
-});
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      });
-    }
-
-
-
-
-
-
-
-
-    // Dispose the player OnDestroy
-    ngOnDestroy() {
-      if (this.player) {
-        this.player.dispose();
+        modal?.on('modalclose', () => {
+          myPlayer.play();
+        });
       }
+    });
+  }
+  // Dispose the player OnDestroy
+  ngOnDestroy() {
+    if (this.player) {
+      this.player.dispose();
     }
   }
+}
 
 
 

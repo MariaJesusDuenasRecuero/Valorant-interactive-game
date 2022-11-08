@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder} from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,16 +9,10 @@ import { Router } from '@angular/router';
 })
 
 export class InicioComponent implements OnInit {
-  public hide = false;
-  public fg: FormGroup = new FormGroup({});
 
-  private password = 'test';
   constructor(public fb: FormBuilder, public router: Router) {}
 
   ngOnInit(): void {
-    this.fg = this.fb.group({
-      password: ['', Validators.required],
-    });
   }
 
 }

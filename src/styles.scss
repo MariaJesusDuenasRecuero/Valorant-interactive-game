@@ -6,8 +6,6 @@ $text-color: #FFFBF5;
 $black-color: #000000;
 $green-color: #0FD2B1;
 
-
-
 html,
 body {
   color: $text-color;
@@ -36,6 +34,10 @@ body {
   background-color: #031b17 !important;
 }
 
+#videojs{
+  border: solid #0FD2B1 2px !important;
+}
+
 .vjs-poster{
   border-radius: 20px;
   background-size: cover !important;
@@ -43,6 +45,87 @@ body {
 
 .vjs-modal-dialog{
   border-radius: 20px !important;
+}
+
+.vjs-modal-dialog-content{
+  
+  h1{
+    font-family: 'Oswald', sans-serif;
+  }
+  img{
+    width: 300px;
+    margin:auto;
+    display:block;
+    height: auto;
+    border-radius:15px;
+  }
+
+  #imgperder{
+    display:none;
+  }
+
+  .btn-primary{
+    font-size: 17px !important;
+  }
+
+  .btn-primary:disabled{
+    background-color: transparent !important;
+  }
+
+  .btn-primary:hover{
+    background-color: #FD4556;
+  }
+
+  .btn-primary:active{
+    background-color: #BD3944 !important;
+  }
+
+  #ganar{
+    display:none;
+    color: #0FD2B1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top:3%;
+  }
+
+  #perder{
+    display:none;
+    color: #FD4556;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top:3%;
+
+  }
+
+  #boton1Correcta:disabled{
+    opacity:1 !important;
+    background-color: #0FD2B1 !important;
+  }
+  #boton2Correcta:disabled{
+    opacity:1 !important;
+    background-color: #0FD2B1 !important;
+  }
+  #boton3Correcta:disabled{
+    opacity:1 !important;
+    background-color: #0FD2B1 !important;
+  }
+
+  a{
+    text-decoration:none;
+  }
+
+  #img-info{
+    width: 150px;
+    margin:auto;
+    display:block;
+    border-radius:15px;
+  }
+
+  #imgperder{
+    display:none;
+  }
 }
 
 .vjs-big-play-button{

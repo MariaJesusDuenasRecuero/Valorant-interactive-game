@@ -36,33 +36,16 @@ export class AdivinaJettComponent implements OnInit {
           firstTime = false;
           const contentEl = document.createElement('div');
           contentEl.innerHTML = `
-          <style>
-            img{
-              width: 300px;
-              height: auto;
-              margin:auto;
-              display:block;
-              border-radius:15px;
-            }
-            a{
-              text-decoration:none;
-            }
-
-          </style>
-          
           <div>
             <br>
             <br>
             <h1>
-              <strong style="font-family: 'Oswald', sans-serif">¿Sabías que...?</strong>
+              <strong>¿Sabías que...?</strong>
             </h1>
             <br/>
             <h3>Una línea de voz no utilizada dentro de los archivos del juego de Raze la tiene llamando a Jett "Joon-Hee". Al principio se pensó que este era su nombre. Finalmente se reveló que el verdadero nombre de Jett era <span style="color: #0FD2B1; font-family: 'Oswald', sans-serif; font-size:20px;" >Sunwoo Han</span>.</h3>
-            <img  height=200px src="../../assets/images/jett.jpg"> 
-
+            <img height=200px src="../../assets/images/jett.jpg"> 
             </div>
-
-
           `;
           myPlayer.play();
 
@@ -82,57 +65,6 @@ export class AdivinaJettComponent implements OnInit {
         secondTime = false;
         const contentEl = document.createElement('div');
         contentEl.innerHTML = `
-        <style>
-          img{
-            width: 150px;
-            margin:auto;
-            display:block;
-            border-radius:15px;
-          }
-
-          .btn-primary{
-            font-size: 17px !important;
-          }
-          
-          .btn-primary:hover{
-            background-color: #FD4556;
-          }
-
-          .btn-primary:disabled{
-            background-color: transparent !important;
-          }
-
-          #boton1Correcta:disabled{
-            opacity:1 !important;
-            background-color: #0FD2B1 !important;
-          }
-
-          .btn-primary:active{
-            background-color: #BD3944 !important;
-          }
-
-          #ganar{
-            display:none;
-            color: #0FD2B1;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:8%;
-          }
-
-          #perder{
-            display:none;
-            color: #FD4556;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-          }
-
-          #imgperder{
-            display:none;
-          }
-          
-        </style>
         <div>
           <br>
           <br>
@@ -195,57 +127,6 @@ export class AdivinaJettComponent implements OnInit {
         thirdTime = false;
         const contentEl = document.createElement('div');
         contentEl.innerHTML = `
-        <style>
-          img{
-            width: 150px;
-            margin:auto;
-            display:block;
-            border-radius:15px;
-          }
-
-          #imgperder{
-            display:none;
-          }
-
-          .btn-primary{
-            font-size: 17px !important;
-          }
-          
-          .btn-primary:hover{
-            background-color: #FD4556;
-          }
-
-          .btn-primary:active{
-            background-color: #BD3944 !important;
-          }
-          
-          .btn-primary:disabled{
-            background-color: transparent !important;
-          }
-
-          #boton2Correcta:disabled{
-            opacity:1 !important;
-            background-color: #0FD2B1 !important;
-          }
-
-          #ganar{
-            display:none;
-            color: #0FD2B1;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding-top:8%;
-          }
-    
-          #perder{
-            display:none;
-            color: #FD4556;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-          }
-          
-        </style>
         <div>
           <br>
           <br>

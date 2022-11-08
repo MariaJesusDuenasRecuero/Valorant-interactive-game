@@ -35,34 +35,16 @@ export class AdivinaRazeComponent implements OnInit, OnDestroy {
             firstTime = false;
             const contentEl = document.createElement('div');
             contentEl.innerHTML = `
-            <style>
-              img{
-                width: 300px;
-                height: auto;
-                margin:auto;
-                display:block;
-                border-radius:15px;
-
-              }
-              a{
-                text-decoration:none;
-              }
-  
-            </style>
-            
             <div>
               <br>
               <br>
               <h1>
-                <strong style="font-family: 'Oswald', sans-serif">¿Sabías que...?</strong>
+                <strong>¿Sabías que...?</strong>
               </h1>
               <br/>
               <h3>A Raze le encanta el breakdance y formó parte de un grupo de B-Girls en Salvador. Se puede ver mas de salvador en el video de música <a href="https://www.youtube.com/watch?v=ZGvz7jTVbc8" target="_blank" style="color: #FD4556; font-family: 'Oswald', sans-serif; font-size:20px;"> “The color of the town” </a>.</h3>
               <img  height=250px src="../../assets/images/raze.jpg"> 
-
               </div>
-  
-  
             `;
             myPlayer.play();
   
@@ -82,60 +64,6 @@ export class AdivinaRazeComponent implements OnInit, OnDestroy {
           secondTime = false;
           const contentEl = document.createElement('div');
           contentEl.innerHTML = `
-          <style>
-
-            img{
-              width: 150px;
-              margin:auto;
-              display:block;
-              border-radius:15px;
-            }
-
-            #imgperder{
-              display:none;
-            }
-  
-            .btn-primary{
-              font-size: 17px !important;
-            }
-            
-            .btn-primary:hover{
-              background-color: #FD4556;
-            }
-  
-            .btn-primary:active{
-              background-color: #BD3944 !important;
-            }
-  
-
-            .btn-primary:disabled{
-              background-color: transparent !important;
-            }
-  
-            #boton2Correcta:disabled{
-              opacity:1 !important;
-              background-color: #0FD2B1 !important;
-            }
-            
-            #ganar{
-              display:none;
-              color: #0FD2B1;
-              font-family: 'Oswald', sans-serif;
-              font-size: 25px;
-              text-align: center;
-              padding-top:8%;
-            }
-
-            #perder{
-              display:none;
-              color: #FD4556;
-              font-family: 'Oswald', sans-serif;
-              font-size: 25px;
-              text-align: center;
-              padding-top:3%;
-            }
-            
-          </style>
           <div>
             <br>
             <br>
@@ -168,16 +96,7 @@ export class AdivinaRazeComponent implements OnInit, OnDestroy {
             <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
             <img id='imgperder' height=150px src="../../assets/grafitis/grafiti5.jpg"> 
             </div>
-  
-          <script>
-          function botonGanar(){
-            document.getElementById('ganar').style.display='block';
-          }
-  
-          function botonPerder(){
-            document.getElementById('perder').style.display='block';
-          }
-        </script>
+
           `;
   
           const modal = myPlayer.createModal(contentEl, {});
@@ -196,57 +115,6 @@ export class AdivinaRazeComponent implements OnInit, OnDestroy {
           thirdTime = false;
           const contentEl = document.createElement('div');
           contentEl.innerHTML = `
-          <style>
-
-          img{
-            width: 150px;
-            margin:auto;
-            display:block;
-            border-radius:15px;
-          }
-
-          #imgperder{
-            display:none;
-          }
-
-          .btn-primary{
-            font-size: 17px !important;
-          }
-  
-          .btn-primary:disabled{
-            background-color: transparent !important;
-          }
-  
-          #boton3Correcta:disabled{
-            opacity:1 !important;
-            background-color: #0FD2B1 !important;
-          }
-          
-          .btn-primary:hover{
-            background-color: #FD4556;
-          }
-  
-          .btn-primary:active{
-            background-color: #BD3944 !important;
-          }
-  
-          #ganar{
-            display:none;
-            color: #0FD2B1;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-          }
-  
-          #perder{
-            display:none;
-            color: #FD4556;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-          }
-          </style>
-        
           <div>
           <br>
           <br>
