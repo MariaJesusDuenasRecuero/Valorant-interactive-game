@@ -6,8 +6,52 @@ $text-color: #FFFBF5;
 $black-color: #000000;
 $green-color: #0FD2B1;
 /**************************************/
-.background{
+video{
+  border-radius: 20px;
+}
 
+.video-js{
+  width: 100% !important;
+  height: 34rem !important;
+  border-radius: 20px !important;
+}
+
+.vjs-poster{
+  border-radius: 20px !important;
+  background-color: transparent !important;
+}
+
+#videojs_html5_api{
+  border-radius: 20px !important;
+}
+
+.video-js .vjs-control-bar {
+  background-color: #0FD2B1 !important;
+}
+
+
+.contenedorVideo{
+  margin: auto;
+  width:60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 7%;
+  border-radius: 50px;
+}
+
+.botonVolver{
+  position:fixed;
+width:400px;
+height:60px;
+top:30px;
+left:30px;
+  background-color: transparent;
+color:$text-color;
+border-radius:50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: calc(5px + 1.5vw);
+  border-color: transparent;
+text-align:center;
 }
 
 
