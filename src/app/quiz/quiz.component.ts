@@ -159,38 +159,6 @@ export class QuizComponent implements OnInit {
         });
       }
 
-      if (myPlayer.currentTime() >= 55 && thirdTime == true) {
-        myPlayer.pause();
-        thirdTime = false;
-        const contentEl = document.createElement('div');
-        contentEl.innerHTML = `
-          <style>
-            img{
-              width: 500px !important;
-            }
-          </style>
-
-          <div>
-            <br>
-            <br>
-            <h1>
-              <strong style="font-family: 'Oswald', sans-serif">¿Te has dado cuenta...?</strong>
-            </h1>
-            <br/>
-            <h3>El mapa que le envia Breach no aparece por primera vez en el móvil, sino en las pantallas  del taller de Raze. Sería el nuevo mapa del juego el cual llamaron BIND. Inspirado en Marruecos<a href="https://www.youtube.com/watch?v=J9hMW6i3bcc" target="_blank" style="color: #FD4556; font-family: 'Oswald', sans-serif; font-size:20px;"> CONÓCELA </a>.</h3>
-            <img  height=250px src="../../assets/images/mapa-bind.png">
-            </div>
-
-
-          `;
-        const modal = myPlayer.createModal(contentEl, {});
-        if (myPlayer.currentTime() >= 63) {
-          modal?.close();
-        }
-        modal?.on('modalclose', () => {
-          myPlayer.play();
-        });
-      }
       if (myPlayer.currentTime() >= 80 && fourthTime == true) {
         myPlayer.pause();
         fourthTime = false;
