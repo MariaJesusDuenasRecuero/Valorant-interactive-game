@@ -48,12 +48,13 @@ body {
 }
 
 .vjs-modal-dialog-content{
+  overflow: hidden !important;
   
   h1{
     font-family: 'Oswald', sans-serif;
   }
   img{
-    width: 300px;
+    width: 200px;
     margin:auto;
     display:block;
     height: auto;
@@ -86,7 +87,8 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     text-align: center;
-    padding-top:3%;
+    padding-top: 2%;
+    margin: 0 !important;
   }
 
   #perder{
@@ -95,8 +97,8 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     text-align: center;
-    padding-top:3%;
-
+    padding-top: 2%;
+    margin: 0 !important;
   }
 
   #boton1Correcta:disabled{
@@ -124,6 +126,10 @@ body {
   }
 
   #imgperder{
+    display:none;
+  }
+
+  #imgGanar{
     display:none;
   }
 }

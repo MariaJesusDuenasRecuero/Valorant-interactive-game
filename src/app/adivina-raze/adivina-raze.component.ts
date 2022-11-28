@@ -80,6 +80,7 @@ export class AdivinaRazeComponent implements OnInit, OnDestroy {
             <br/><br/>
             <button type="button" id='boton2Correcta' class="btn btn-primary" onClick="
             document.getElementById('ganar').style.display='block'
+            document.getElementById('imgGanar').style.display='block';
             document.getElementById('boton1').disabled=true;
             document.getElementById('boton2Correcta').disabled=true;
             document.getElementById('boton3').disabled=true;
@@ -95,6 +96,7 @@ export class AdivinaRazeComponent implements OnInit, OnDestroy {
             <p id="ganar">SI, ES CORRECTO! :D</p>
             <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
             <img id='imgperder' height=150px src="../../assets/grafitis/grafiti5.jpg"> 
+            <img id='imgGanar' height=150px src="../../assets/grafitis/grafiti20.webp"> 
             </div>
 
           `;
@@ -141,6 +143,7 @@ export class AdivinaRazeComponent implements OnInit, OnDestroy {
           <br/><br/>
           <button type="button" id='boton3Correcta' class="btn btn-primary"  onClick="
             document.getElementById('ganar').style.display='block';
+            document.getElementById('imgGanar').style.display='block';
             document.getElementById('boton1').disabled=true;
             document.getElementById('boton2').disabled=true;
             document.getElementById('boton3Correcta').disabled=true;
@@ -157,7 +160,8 @@ export class AdivinaRazeComponent implements OnInit, OnDestroy {
           ">4. Inmortal 2</button>
           <p id="ganar">SI, ES CORRECTO! :D</p>
           <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
-          <img id='imgperder' height=150px src="../../assets/grafitis/grafiti7.jpg"> 
+          <img id='imgperder' style="width: 150px;" src="../../assets/grafitis/grafiti7.jpg"> 
+          <img id='imgGanar' height=150px src="../../assets/grafitis/grafiti21.webp"> 
         </div>
           `;
   

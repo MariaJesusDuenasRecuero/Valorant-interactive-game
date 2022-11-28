@@ -1,15 +1,19 @@
-# My Interactive Game Valorant
+# 1. My Interactive Game Valorant
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+Se trata de una aplicación multimedia de video interactivo en el que se puede visualizar e interactuar con diferentes videos de la tematica del videojuego [Valorant](https://playvalorant.com/es-es/). Se contara con un modo de video para visualizar una jugada y diferentes preguntas relacionadas con esta y un quiz con diferentes preguntas sobre cultura general del videojuego.
 
-## Development server
+El proyecto se ha generado con la versión 14.2.5 de [Angular CLI](https://github.com/angular/angular-cli).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 1.1. Development server
 
-## Code scaffolding
+Ejecutar el comando `ng serve` o `npm run` para iniciar la aplicación. La aplicación estará disponible en la dirección `http://localhost:4200/`. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Imagenes de la aplicación
 
-## Build
+![](imagenes_ReadMe/Inicio.png)
+![](imagenes_ReadMe/elegirPersonaje.jpg)
+![](imagenes_ReadMe/PreguntaVideo.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+
+

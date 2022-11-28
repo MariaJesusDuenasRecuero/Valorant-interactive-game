@@ -44,7 +44,7 @@ export class AdivinaJettComponent implements OnInit {
             </h1>
             <br/>
             <h3>Una línea de voz no utilizada dentro de los archivos del juego de Raze la tiene llamando a Jett "Joon-Hee". Al principio se pensó que este era su nombre. Finalmente se reveló que el verdadero nombre de Jett era <span style="color: #0FD2B1; font-family: 'Oswald', sans-serif; font-size:20px;" >Sunwoo Han</span>.</h3>
-            <img height=200px src="../../assets/images/jett.jpg"> 
+            <img style="width=350px !important" src="../../assets/images/jett.jpg"> 
             </div>
           `;
           myPlayer.play();
@@ -73,6 +73,7 @@ export class AdivinaJettComponent implements OnInit {
           </h1>
           <button type="button" id='boton1Correcta' class="btn btn-primary" onClick="
           document.getElementById('ganar').style.display='block';
+          document.getElementById('imgGanar').style.display='block';
           document.getElementById('boton1Correcta').disabled=true;
           document.getElementById('boton2').disabled=true;
           document.getElementById('boton3').disabled=true;
@@ -107,7 +108,8 @@ export class AdivinaJettComponent implements OnInit {
           ">4. Raze aparece, Jett mata a Raze pero no tiene suficiente tiempo para defusar y pierden la ronda.</button>
             <p id="ganar">SI, ES CORRECTO! :D</p>
             <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
-            <img id='imgperder' height=150px src="../../assets/grafitis/grafiti10.jpg"> 
+            <img id='imgperder' style="width: 150px;" src="../../assets/grafitis/grafiti10.jpg"> 
+            <img id='imgGanar' style="width: 150px;" src="../../assets/grafitis/grafiti17.webp"> 
           </div>
         `;
 
@@ -144,6 +146,7 @@ export class AdivinaJettComponent implements OnInit {
             <br><br>
             <button type="button" id='boton2Correcta' class="btn btn-primary" onClick="
               document.getElementById('ganar').style.display='block';
+              document.getElementById('imgGanar').style.display='block';
               document.getElementById('boton1').disabled=true;
               document.getElementById('boton2Correcta').disabled=true;
               document.getElementById('boton3').disabled=true;
@@ -169,7 +172,8 @@ export class AdivinaJettComponent implements OnInit {
             ">4. Bronce 2</button>
             <p id="ganar">SI, ES CORRECTO! :D</p>
             <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
-            <img id='imgperder' height=150px src="../../assets/grafitis/grafiti6.jpg"> 
+            <img id='imgperder' style="width: 150px;" src="../../assets/grafitis/grafiti6.jpg">
+            <img id='imgGanar' src="../../assets/grafitis/grafiti16.webp"> 
           </div>
         `;
 
