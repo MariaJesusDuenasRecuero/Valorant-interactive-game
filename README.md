@@ -4,7 +4,7 @@ Se trata de una aplicación multimedia de video interactivo en el que se puede v
 
 El proyecto se ha generado con la versión 14.2.5 de [Angular CLI](https://github.com/angular/angular-cli).
 
-## 1.1. Development server
+## 1.1. Ejecución de la aplicación
 
 Ejecutar el comando `ng serve` o `npm run` para iniciar la aplicación. La aplicación estará disponible en la dirección `http://localhost:4200/`. 
 
