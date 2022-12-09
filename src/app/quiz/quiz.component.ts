@@ -594,8 +594,6 @@ export class QuizComponent implements OnInit {
     document.getElementById('boton1').disabled=true;
     document.getElementById('boton2').disabled=true;
 
-
-
   ">2. Si pero más abajo </button>
 
 
