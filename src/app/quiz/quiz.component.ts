@@ -53,7 +53,7 @@ export class QuizComponent implements OnInit {
           <br>
           <br>
           <h1>
-            <strong style="font-family: 'Oswald', sans-serif">¿Qué otro agente a partee de Raze aparece?</strong>
+            <strong style="font-family: 'Oswald', sans-serif">¿Qué otro agente a parte de Raze aparece?</strong>
           </h1>
           <button type="button" id='boton1' class="btn btn-primary" onClick="
             document.getElementById('perder').style.display='block';
@@ -61,6 +61,7 @@ export class QuizComponent implements OnInit {
             document.getElementById('boton1').disabled=true;
             document.getElementById('boton2').disabled=true;
             document.getElementById('boton3Correcta').disabled=true;
+
 
 
           ">1. Viper</button>
@@ -74,21 +75,19 @@ export class QuizComponent implements OnInit {
 
           ">2. Su hermana Reyna </button>
           <br/><br/>
-          <button type="button" id='boton2' class="btn btn-primary" onClick="
+          <button type="button" id='boton3Correcta' class="btn btn-primary" onClick="
           document.getElementById('ganar').style.display='block';
-          document.getElementById('imgperder').style.display='block';
           document.getElementById('boton1').disabled=true;
           document.getElementById('boton2').disabled=true;
           document.getElementById('boton3Correcta').disabled=true;
+          document.getElementById('imgGanar').style.display='block';
 
-        ">2. Su amiga del alma Killjoy </button>
-
-
-
+        ">3. Su amiga del alma Killjoy </button>
 
           <p id="ganar">SI, ES CORRECTO! :D</p>
           <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
           <img id='imgperder' height=250px src="../../assets/grafitis/grafiti1.jpg">
+          <img id='imgGanar' style="width: 250px;" height=250px  src="../../assets/grafitis/grafiti-raze.gif">
         </div>
         `;
         myPlayer.play();
@@ -130,21 +129,23 @@ export class QuizComponent implements OnInit {
           <br/><br/>
           <button type="button" id='boton2Correcta' class="btn btn-primary" onClick="
             document.getElementById('ganar').style.display='block';
-            document.getElementById('imgperder').style.display='block';
+            document.getElementById('imgGanar').style.display='block';
             document.getElementById('boton1').disabled=true;
             document.getElementById('boton2Correcta').disabled=true;
             document.getElementById('boton3').disabled=true;
-          ">2. Breach, con las actualziaciones del nuevo mapa </button>
+          ">2. Breach, con las actualizaciones del nuevo mapa </button>
           <br/><br/>
           <button type="button" id='boton3' class="btn btn-primary"  onClick="
             document.getElementById('perder').style.display='block';
+            document.getElementById('imgperder').style.display='block';
             document.getElementById('boton1').disabled=true;
             document.getElementById('boton2Correcta').disabled=true;
             document.getElementById('boton3').disabled=true;
           ">3. Yoru, le enseña su nuevo peine mariposa</button>
           <p id="ganar">SI, ES CORRECTO! :D</p>
           <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
-          <img id='imgperder' height=250px src="../../assets/grafitis/grafiti11.jpg">
+          <img id='imgperder' height=250px src="../../assets/grafitis/grafiti1.gif">
+          <img id='imgGanar' style="width: 150px;" src="../../assets/grafitis/grafiti20.webp">
         </div>
         `;
 
@@ -195,6 +196,7 @@ export class QuizComponent implements OnInit {
           <br/><br/>
           <button type="button" id='boton3' class="btn btn-primary"  onClick="
             document.getElementById('perder').style.display='block';
+            document.getElementById('imgperder').style.display='block';
             document.getElementById('boton1').disabled=true;
             document.getElementById('boton2').disabled=true;
             document.getElementById('boton3').disabled=true;
@@ -203,6 +205,7 @@ export class QuizComponent implements OnInit {
           <br/><br/>
           <button type="button" id='boton4Correcta' class="btn btn-primary"  onClick="
             document.getElementById('ganar').style.display='block';
+            document.getElementById('imgGanar').style.display='block';
             document.getElementById('boton1').disabled=true;
             document.getElementById('boton2').disabled=true;
             document.getElementById('boton3').disabled=true;
@@ -211,7 +214,8 @@ export class QuizComponent implements OnInit {
 
           <p id="ganar">SI, ES CORRECTO! :D</p>
           <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
-          <img id='imgperder' height=250px src="../../assets/grafitis/grafiti5.jpg">
+          <img id='imgperder' height=250px src="../../assets/grafitis/grafiti2.jpg">
+          <img id='imgGanar' style="width: 150px;" src="../../assets/grafitis/grafiti16.webp">
         </div>
         `;
         myPlayer.play();
@@ -250,7 +254,7 @@ export class QuizComponent implements OnInit {
               document.getElementById('boton2').disabled=true;
               document.getElementById('boton3Correcta').disabled=true;
               document.getElementById('boton4').disabled=true;
-            ">1.Sevilla , España</button>
+            ">1.Sevilla, España</button>
             <br/><br/>
             <button type="button" id='boton2' class="btn btn-primary" onClick="
               document.getElementById('perder').style.display='block';
@@ -261,15 +265,16 @@ export class QuizComponent implements OnInit {
               document.getElementById('boton4').disabled=true;
             ">2. Zaragoza, España </button>
             <br/><br/>
-            <button type="button" id='boton3' class="btn btn-primary"  onClick="
+            <button type="button" id='boton3Correcta' class="btn btn-primary"  onClick="
               document.getElementById('ganar').style.display='block';
+              document.getElementById('imgGanar').style.display='block';
               document.getElementById('boton1').disabled=true;
               document.getElementById('boton2').disabled=true;
               document.getElementById('boton3Correcta').disabled=true;
               document.getElementById('boton4').disabled=true;
-            ">3. Venecia , Italia</button>
+            ">3. Venecia, Italia</button>
             <br/><br/>
-            <button type="button" id='boton4Correcta' class="btn btn-primary"  onClick="
+            <button type="button" id='boton4' class="btn btn-primary"  onClick="
               document.getElementById('perder').style.display='block';
               document.getElementById('boton1').disabled=true;
               document.getElementById('boton2').disabled=true;
@@ -280,6 +285,7 @@ export class QuizComponent implements OnInit {
             <p id="ganar">SI, ES CORRECTO! :D</p>
             <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
             <img id='imgperder' height=250px src="../../assets/grafitis/grafiti5.jpg">
+            <img id='imgGanar' style="width: 150px;" src="../../assets/grafitis/grafiti17.webp">
           </div>
           `;
         const modal = myPlayer.createModal(contentEl, {});
@@ -324,19 +330,20 @@ export class QuizComponent implements OnInit {
 
           ">2. Phantom </button>
           <br/><br/>
-          <button type="button" id='boton3' class="btn btn-primary"  onClick="
+          <button type="button" id='boton3Correcta' class="btn btn-primary"  onClick="
             document.getElementById('ganar').style.display='block';
+            document.getElementById('imgGanar').style.display='block';
             document.getElementById('boton1').disabled=true;
             document.getElementById('boton2').disabled=true;
             document.getElementById('boton3Correcta').disabled=true;
 
           ">3. Vandal</button>
           <br/><br/>
-
-
           <p id="ganar">SI, ES CORRECTO! :D</p>
           <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
-          <img id='imgperder' height=250px src="../../assets/grafitis/grafiti5.jpg">
+          <img id='imgperder' height=250px src="../../assets/grafitis/grafiti13.jpg">
+          <img id='imgGanar' style="width: 150px;" src="../../assets/grafitis/grafiti21.webp">
+
         </div>
         `;
         myPlayer.play();
@@ -367,10 +374,10 @@ export class QuizComponent implements OnInit {
         <h1>
           <strong style="font-family: 'Oswald', sans-serif">¿Quién le habla por pinganillo a Phoenix?</strong>
         </h1>
-        <button type="button" id='boton1' class="btn btn-primary" onClick="
+        <button type="button" id='boton1Correcta' class="btn btn-primary" onClick="
           document.getElementById('ganar').style.display='block';
-          document.getElementById('imgperder').style.display='block';
-          document.getElementById('boton1').disabled=true;
+          document.getElementById('imgGanar').style.display='block';
+          document.getElementById('boton1Correcta').disabled=true;
           document.getElementById('boton2').disabled=true;
           document.getElementById('boton3').disabled=true;
           document.getElementById('boton4').disabled=true;
@@ -380,7 +387,7 @@ export class QuizComponent implements OnInit {
         <button type="button" id='boton2' class="btn btn-primary" onClick="
           document.getElementById('perder').style.display='block';
           document.getElementById('imgperder').style.display='block';
-          document.getElementById('boton1').disabled=true;
+          document.getElementById('boton1Correcta').disabled=true;
           document.getElementById('boton2').disabled=true;
           document.getElementById('boton3').disabled=true;
           document.getElementById('boton4').disabled=true;
@@ -389,7 +396,8 @@ export class QuizComponent implements OnInit {
         <br/><br/>
         <button type="button" id='boton3' class="btn btn-primary"  onClick="
           document.getElementById('perder').style.display='block';
-          document.getElementById('boton1').disabled=true;
+          document.getElementById('imgperder').style.display='block';
+          document.getElementById('boton1Correcta').disabled=true;
           document.getElementById('boton2').disabled=true;
           document.getElementById('boton3').disabled=true;
           document.getElementById('boton4').disabled=true;
@@ -398,7 +406,8 @@ export class QuizComponent implements OnInit {
         <br/><br/>
         <button type="button" id='boton4' class="btn btn-primary"  onClick="
         document.getElementById('perder').style.display='block';
-        document.getElementById('boton1').disabled=true;
+        document.getElementById('imgperder').style.display='block';
+        document.getElementById('boton1Correcta').disabled=true;
         document.getElementById('boton2').disabled=true;
         document.getElementById('boton3').disabled=true;
         document.getElementById('boton4').disabled=true;
@@ -408,7 +417,8 @@ export class QuizComponent implements OnInit {
 
         <p id="ganar">SI, ES CORRECTO! :D</p>
         <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
-        <img id='imgperder' height=250px src="../../assets/grafitis/grafiti5.jpg">
+        <img id='imgperder' height=250px src="../../assets/grafitis/grafiti9.jpg">
+        <img id='imgGanar' style="width: 150px;" src="../../assets/grafitis/grafiti8.jpg">
       </div>
       `;
         myPlayer.play();
@@ -438,7 +448,7 @@ export class QuizComponent implements OnInit {
       <br>
       <br>
       <h1>
-        <strong style="font-family: 'Oswald', sans-serif">¿Qué esta hacinedo Killjoy?</strong>
+        <strong style="font-family: 'Oswald', sans-serif">¿Qué esta haciendo Killjoy?</strong>
       </h1>
       <button type="button" id='boton1' class="btn btn-primary" onClick="
         document.getElementById('perder').style.display='block';
@@ -450,9 +460,9 @@ export class QuizComponent implements OnInit {
 
       ">1. Analizar la spike</button>
       <br/><br/>
-      <button type="button" id='boton2' class="btn btn-primary" onClick="
+      <button type="button" id='boton2Correcta' class="btn btn-primary" onClick="
         document.getElementById('ganar').style.display='block';
-        document.getElementById('imgperder').style.display='block';
+        document.getElementById('imgpGanar').style.display='block';
         document.getElementById('boton1').disabled=true;
         document.getElementById('boton2Correcta').disabled=true;
         document.getElementById('boton3').disabled=true;
@@ -462,6 +472,7 @@ export class QuizComponent implements OnInit {
       <br/><br/>
       <button type="button" id='boton3' class="btn btn-primary"  onClick="
         document.getElementById('perder').style.display='block';
+        document.getElementById('imgperder').style.display='block';
         document.getElementById('boton1').disabled=true;
         document.getElementById('boton2Correcta').disabled=true;
         document.getElementById('boton3').disabled=true;
@@ -471,7 +482,9 @@ export class QuizComponent implements OnInit {
 
       <p id="ganar">SI, ES CORRECTO! :D</p>
       <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
-      <img id='imgperder' height=250px src="../../assets/grafitis/grafiti3.jpg">
+      <img id='imgperder' height=250px src="../../assets/grafitis/grafiti10.jpg">
+      <img id='imgGanar' style="width: 250px;" height=250px src="../../assets/grafitis/grafiti2.gif">
+
     </div>
     `;
         myPlayer.play();
@@ -512,9 +525,9 @@ export class QuizComponent implements OnInit {
 
     ">1. Yoru</button>
     <br/><br/>
-    <button type="button" id='boton2' class="btn btn-primary" onClick="
+    <button type="button" id='boton2Correcta' class="btn btn-primary" onClick="
       document.getElementById('ganar').style.display='block';
-      document.getElementById('imgperder').style.display='block';
+      document.getElementById('imgGanar').style.display='block';
       document.getElementById('boton1').disabled=true;
       document.getElementById('boton2Correcta').disabled=true;
       document.getElementById('boton3').disabled=true;
@@ -523,7 +536,8 @@ export class QuizComponent implements OnInit {
     ">2. Su doble del planeta Beta </button>
     <br/><br/>
     <button type="button" id='boton3' class="btn btn-primary"  onClick="
-      document.getElementById('ganar').style.display='block';
+      document.getElementById('perder').style.display='block';
+      document.getElementById('imgperder').style.display='block';
       document.getElementById('boton1').disabled=true;
       document.getElementById('boton2Correcta').disabled=true;
       document.getElementById('boton3').disabled=true;
@@ -534,6 +548,7 @@ export class QuizComponent implements OnInit {
     <p id="ganar">SI, ES CORRECTO! :D</p>
     <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
     <img id='imgperder' height=250px src="../../assets/grafitis/grafiti3.jpg">
+    <img id='imgGanar' style="width: 250px;" height=250px src="../../assets/grafitis/grafiti6.jpg">
   </div>
   `;
         myPlayer.play();
@@ -587,6 +602,8 @@ export class QuizComponent implements OnInit {
   <p id="ganar">SI, ES CORRECTO! :D</p>
   <p id="perder">NO :(, MÁS SUERTE LA PRÓXIMA VEZ</p>
   <img id='imgperder' height=250px src="../../assets/grafitis/grafiti11.jpg">
+  <img id='imgGanar' style="width: 250px;" height=250px src="../../assets/grafitis/grafiti6.jpg">
+
 </div>
 `;
         myPlayer.play();
